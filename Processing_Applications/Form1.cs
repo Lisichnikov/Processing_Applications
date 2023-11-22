@@ -82,8 +82,9 @@ namespace Processing_Applications
 
         private void button1_Click(object sender, EventArgs e)
         {
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             openFileDialog2.Multiselect = true;
-            openFileDialog2.Filter = "Image files (*.BMP, *.JPG, *.GIF, *.TIF, *.PNG, *.ICO, *.EMF, *.WMF)|*.bmp;*.jpg;*.gif; *.tif; *.png; *.ico; *.emf; *.wmf";
+            openFileDialog2.Filter = "Image files (*.BMP, *.JPG, *.GIF, *.TIF, *.PNG, *.ICO, *.EMF, *.WMF, *.JPEG)|*.bmp;*.jpg;*.gif; *.tif; *.png; *.ico; *.emf; *.wmf; *.jpeg";
             if (openFileDialog2.ShowDialog() == DialogResult.OK)
             {
                 System.IO.FileStream fs = new System.IO.FileStream(openFileDialog2.FileName, System.IO.FileMode.Open);
