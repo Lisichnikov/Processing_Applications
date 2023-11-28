@@ -21,8 +21,10 @@ namespace Processing_Applications
 
             openFileDialog1.Filter = "Text files(*.txt)|*.txt|All files(*.*)|*.*";
             saveFileDialog1.Filter = "Text files(*.txt)|*.txt|All files(*.*)|*.*";
+            string Text = "";
         }
 
+        // нажатие кнопки открытия текстового файла
         private void open_button_Click(object sender, EventArgs e)
         {
             if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
@@ -36,6 +38,7 @@ namespace Processing_Applications
             // File.Delete(filename);
         }
 
+        // нажатие кнопки подтверждения текстовой заявки
         private void confirm_button_Click(object sender, EventArgs e)
         {
             if (richTextBox1.Text == "")
@@ -58,6 +61,7 @@ namespace Processing_Applications
             }
         }
 
+        // нажатие кнопки отклонения текстовой заявки
         private void reject_button_Click(object sender, EventArgs e)
         {
             if (richTextBox1.Text == "")
@@ -80,6 +84,7 @@ namespace Processing_Applications
             }
         }
 
+        // нажатие кнопки открытия конкурсной работы
         private void button1_Click(object sender, EventArgs e)
         {
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -97,10 +102,9 @@ namespace Processing_Applications
             {
                 MessageBox.Show("Файл не был открыт", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
         }
 
+        // нажатие кнопки принятия конкурсной работы
         private void button2_Click(object sender, EventArgs e)
         {
             if (pictureBox1.Image != null) //если в pictureBox есть изображение
@@ -132,6 +136,7 @@ namespace Processing_Applications
             }
         }
 
+        // нажатие кнопки отклонения конкурсной работы
         private void button3_Click(object sender, EventArgs e)
         {
             if (pictureBox1.Image != null) //если в pictureBox есть изображение
