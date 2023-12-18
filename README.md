@@ -6,8 +6,10 @@
 - [Использование](#использование)
 - [Тестирование](#тестирование)
 - [Contributing](#contributing)
+- [FAQ](#faq)
 - [To do](#to-do)
 - [Команда проекта](#команда-проекта)
+- [Источники](#источники)
 
 ## Технологии
 - [VisualStudio 2022](https://visualstudio.microsoft.com/ru/)
